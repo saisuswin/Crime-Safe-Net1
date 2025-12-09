@@ -3,6 +3,44 @@
   background: #f8f9fb;
 }
 
+/* ===== LOGO SECTION ===== */
+.logo-section {
+  background: white;
+  padding: 20px;
+  border-bottom: 2px solid #e0e6f2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 2px 12px rgba(0, 102, 204, 0.2);
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0066cc;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
   background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
@@ -609,6 +647,19 @@
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1200px) {
+  .logo-container {
+    gap: 12px;
+  }
+
+  .logo-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
   .hero-wrapper {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -658,6 +709,23 @@
 }
 
 @media (max-width: 768px) {
+  .logo-section {
+    padding: 15px;
+  }
+
+  .logo-container {
+    gap: 10px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 1.3rem;
+  }
+
   .hero {
     padding: 60px 20px;
     min-height: auto;

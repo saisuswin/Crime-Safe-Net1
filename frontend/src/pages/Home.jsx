@@ -6,6 +6,16 @@ import './Home.css';
 export function Home() {
   return (
     <div className="home">
+      {/* Logo Section */}
+      <div className="logo-section">
+        <div className="logo-container">
+          <div className="logo-icon">
+            <Shield size={40} strokeWidth={1.5} />
+          </div>
+          <h1 className="logo-text">CrimeSafeNet</h1>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-wrapper">
