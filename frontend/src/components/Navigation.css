@@ -1,16 +1,17 @@
 .navbar {
-  background: linear-gradient(135deg, #b71c1c 0%, #e53935 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
   padding: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(183, 28, 28, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 66, 204, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,11 +19,14 @@
 
 .navbar-logo {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.5px;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .navbar-logo:hover {
@@ -32,7 +36,7 @@
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
   margin: 0;
 }
@@ -44,53 +48,56 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
   position: relative;
+  font-size: 0.95rem;
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
 }
 
 .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-bottom: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
 }
 
 .nav-user {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding-left: 2rem;
-  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .user-info {
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
 
 .nav-logout {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
   color: white;
-  border: 2px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0.5rem 1rem;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
 }
 
 .nav-logout:hover {
   background: white;
-  color: #b71c1c;
+  color: #0066cc;
+  border-color: white;
   transform: translateY(-2px);
 }
 

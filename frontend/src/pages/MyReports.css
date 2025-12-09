@@ -6,13 +6,13 @@
 }
 
 .reports-header {
-  background: linear-gradient(135deg, #b71c1c 0%, #e53935 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
   color: white;
   padding: 40px;
-  border-radius: 12px;
+  border-radius: 10px;
   text-align: center;
   margin-bottom: 2rem;
-  box-shadow: 0 8px 24px rgba(183, 28, 28, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 102, 204, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,57 +23,65 @@
 }
 
 .reports-header h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
 .reports-header p {
-  font-size: 1rem;
-  opacity: 0.95;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  letter-spacing: 0.2px;
 }
 
 .error-message {
-  background: #ffebee;
-  color: #c62828;
+  background: #fee2e2;
+  color: #991b1b;
   padding: 12px;
   border-radius: 6px;
   margin-bottom: 16px;
-  border-left: 4px solid #c62828;
+  border-left: 4px solid #ef4444;
+  font-size: 0.9rem;
 }
 
 .loading-state {
   background: white;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 40px;
   text-align: center;
   color: #666;
   font-size: 16px;
+  border: 1px solid #e0e6f2;
 }
 
 .no-reports-message {
   background: white;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 60px 40px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e6f2;
 }
 
 .no-reports-message svg {
-  color: #b71c1c;
+  color: #0066cc;
   margin-bottom: 1rem;
   opacity: 0.3;
 }
 
 .no-reports-message h2 {
   font-size: 1.8rem;
-  color: #333;
+  color: #1a2332;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
 .no-reports-message p {
   color: #666;
   margin-bottom: 2rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .reports-summary {
@@ -86,16 +94,17 @@
 .summary-card {
   background: white;
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border-top: 4px solid #b71c1c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  border-top: 3px solid #0066cc;
+  border: 1px solid #e0e6f2;
 }
 
 .summary-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(183, 28, 28, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 102, 204, 0.12);
 }
 
 .summary-number {
