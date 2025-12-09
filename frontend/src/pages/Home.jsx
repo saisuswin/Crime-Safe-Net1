@@ -46,28 +46,6 @@ export function Home() {
         </div>
       </section>
 
-      {/* Quick Stats Section */}
-      <section className="stats-section">
-        <div className="stats-wrapper">
-          <div className="stat-item">
-            <div className="stat-number">24/7</div>
-            <div className="stat-label">Available</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">100%</div>
-            <div className="stat-label">Secure</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">Real-time</div>
-            <div className="stat-label">Updates</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">Community</div>
-            <div className="stat-label">Driven</div>
-          </div>
-        </div>
-      </section>
-
       {/* Key Features Section */}
       <section className="features">
         <div className="features-wrapper">
