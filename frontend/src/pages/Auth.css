@@ -3,10 +3,11 @@
   background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  align-items: flex-start;
+  padding: 40px 20px;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
+  padding-top: 60px;
 }
 
 .auth-container::before {
@@ -43,6 +44,7 @@
   animation: slideUp 0.5s ease;
   position: relative;
   z-index: 1;
+  margin-bottom: 60px;
 }
 
 .auth-header {
