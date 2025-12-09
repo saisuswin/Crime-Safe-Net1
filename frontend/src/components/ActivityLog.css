@@ -1,0 +1,217 @@
+.activity-log-section {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.activity-log-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 20px 0;
+  color: #b71c1c;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.comment-box {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.comment-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-box textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.comment-box textarea:focus {
+  outline: none;
+  border-color: #b71c1c;
+  box-shadow: 0 0 0 3px rgba(183, 28, 28, 0.1);
+}
+
+.comment-box .btn {
+  align-self: flex-start;
+}
+
+.activity-timeline {
+  position: relative;
+  padding-left: 8px;
+}
+
+.activity-timeline::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e0e0e0;
+}
+
+.activity-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.activity-icon {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 50%;
+  border: 2px solid white;
+  flex-shrink: 0;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.activity-content {
+  flex: 1;
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.activity-header strong {
+  color: #1a1a1a;
+}
+
+.activity-action {
+  background: #e53935;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.activity-description {
+  color: #555;
+  margin: 6px 0;
+  word-wrap: break-word;
+}
+
+.activity-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  padding: 6px 8px;
+  background: white;
+  border-radius: 4px;
+  border-left: 3px solid #b71c1c;
+}
+
+.old-value {
+  background: #ffebee;
+  color: #c62828;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.arrow {
+  color: #999;
+  font-weight: bold;
+}
+
+.new-value {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.activity-item time {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.loading {
+  text-align: center;
+  padding: 32px 16px;
+  color: #666;
+}
+
+.no-activity {
+  text-align: center;
+  padding: 32px 16px;
+  color: #999;
+  font-style: italic;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border-left: 4px solid #c62828;
+}
+
+@media (max-width: 768px) {
+  .activity-log-section {
+    padding: 16px;
+  }
+
+  .activity-item {
+    gap: 12px;
+  }
+
+  .activity-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .activity-content {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .comment-box form {
+    gap: 10px;
+  }
+
+  .comment-box textarea {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

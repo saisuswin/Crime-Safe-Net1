@@ -1,0 +1,415 @@
+.analytics-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.analytics-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.analytics-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.analytics-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Statistics Cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card.reported {
+  border-left: 4px solid #f44336;
+}
+
+.stat-card.investigating {
+  border-left: 4px solid #FF9800;
+}
+
+.stat-card.resolved {
+  border-left: 4px solid #4CAF50;
+}
+
+.stat-card.total {
+  border-left: 4px solid #2196F3;
+}
+
+.stat-icon {
+  color: #666;
+  flex-shrink: 0;
+}
+
+.stat-card.reported .stat-icon { color: #f44336; }
+.stat-card.investigating .stat-icon { color: #FF9800; }
+.stat-card.resolved .stat-icon { color: #4CAF50; }
+.stat-card.total .stat-icon { color: #2196F3; }
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Map Section */
+.map-section {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.map-header h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.map-instructions {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.map-section .btn-secondary {
+  flex-shrink: 0;
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #1976D2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+}
+
+.map-legend {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.legend-pin {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.legend-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2196F3;
+  border: 3px solid #1976D2;
+  opacity: 0.5;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.crime-map {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.crime-popup {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.crime-popup strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.crime-popup small {
+  display: block;
+  margin: 4px 0;
+  color: #666;
+}
+
+/* Insights Section */
+.insights-section {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.insights-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crimes-list {
+  display: grid;
+  gap: 15px;
+}
+
+.crime-item {
+  display: grid;
+  grid-template-columns: 40px 1fr 150px;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #2196F3;
+}
+
+.crime-rank {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2196F3;
+  text-align: center;
+}
+
+.crime-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.crime-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.crime-count {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.crime-bar {
+  background: #e0e0e0;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.crime-bar-fill {
+  background: linear-gradient(90deg, #2196F3, #1976D2);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Recent Incidents Section */
+.recent-section {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.incidents-list {
+  display: grid;
+  gap: 12px;
+}
+
+.incident-item {
+  display: grid;
+  grid-template-columns: 30px 1fr 150px;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.incident-item:hover {
+  background: #f0f0f0;
+  border-left-width: 5px;
+}
+
+.incident-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.incident-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.incident-title {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.incident-details {
+  font-size: 0.85rem;
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.incident-status-badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Loading and Error States */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c62828;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .analytics-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .map-legend {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .crime-item {
+    grid-template-columns: 30px 1fr;
+    gap: 10px;
+  }
+
+  .crime-bar {
+    display: none;
+  }
+
+  .crime-map {
+    height: 350px;
+  }
+
+  .incident-item {
+    grid-template-columns: 25px 1fr;
+  }
+
+  .incident-status-badge {
+    display: none;
+  }
+}

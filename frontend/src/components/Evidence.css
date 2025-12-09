@@ -1,0 +1,149 @@
+.evidence-section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 12px;
+  border-left: 4px solid #b71c1c;
+}
+
+.evidence-section h3 {
+  color: #b71c1c;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.evidence-upload {
+  margin-bottom: 2rem;
+}
+
+.upload-area {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#evidence-input {
+  display: none;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: white;
+  border: 2px dashed #b71c1c;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-label:hover {
+  background: #fff5f5;
+  border-color: #e53935;
+}
+
+.upload-label span {
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.upload-label small {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.upload-label svg {
+  color: #b71c1c;
+}
+
+.evidence-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.evidence-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.evidence-item:hover {
+  box-shadow: 0 4px 12px rgba(183, 28, 28, 0.15);
+  transform: translateY(-3px);
+}
+
+.evidence-preview {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+.evidence-info {
+  padding: 1rem;
+}
+
+.evidence-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  word-break: break-word;
+}
+
+.evidence-info small {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.no-evidence {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .evidence-section {
+    padding: 1.5rem;
+  }
+
+  .evidence-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .evidence-preview {
+    height: 150px;
+  }
+
+  .video-placeholder {
+    height: 150px;
+  }
+}
